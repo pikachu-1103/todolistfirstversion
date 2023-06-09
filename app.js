@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const date = require(__dirname + "/date.js")
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 
 const items =["Buy Food","Cook Food","Eat Food"];
 const workItems =[];
